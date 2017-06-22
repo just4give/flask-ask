@@ -22,7 +22,7 @@ setup(
     platforms='any',
     install_requires=[
         str(item.req) for item in
-        parse_requirements('requirements.txt', session=False)
+        parse_requirements('requirements.txt')
     ],
     test_requires=[
         'mock',
